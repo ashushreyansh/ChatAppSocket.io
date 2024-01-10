@@ -1,16 +1,21 @@
 {
-  "name": "project_chat_application",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "cors": "^2.8.5",
     "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-emoji": "^0.5.0",
     "react-router-dom": "^6.21.1",
-    "react-scripts": "^6.0.1",
+    "react-scripts": "5.0.1",
     "react-scroll-to-bottom": "^4.2.0",
-    "socket.io-client": "^4.7.3"
+    "socket.io-client": "^4.7.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,7 +24,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -32,13 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^8.56.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
